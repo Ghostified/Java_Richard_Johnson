@@ -10,14 +10,12 @@ public class ComparisonApp {
         int comparisonStrings;
         String string1 , string2;
         boolean stringsAreEqual;
-        String introduction, outputMessage;
 
-        System.out.println("This program compares two strings");
-        System.out.println();
 
+        String introduction = "This program compares two strings. \n";
+        String outputMessage;
 
         //Take user input
-        introduction = "This program compares two strings. \n";
         JOptionPane.showMessageDialog( null, introduction);
         string1 = JOptionPane.showInputDialog("Enter the first string");
         string2 = JOptionPane.showInputDialog("Enter string two");
