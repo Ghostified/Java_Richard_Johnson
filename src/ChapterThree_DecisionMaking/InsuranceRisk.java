@@ -2,8 +2,10 @@ package ChapterThree_DecisionMaking;
 /*
 An application to calculate insurance risk
 Increase in height/weight ration the risk increases
- Smoking also increases the risk
- Life insurance risk is measure in height medium and low
+Smoking also increases the risk
+Life insurance risk is measure in height medium and low
+Each risk category has a premium to be paid
+User is only shown their risk category and the premium to be paid
 
  */
 
@@ -13,11 +15,12 @@ import java.util.Scanner;
 public class InsuranceRisk {
     public static void main (String [] args){
 
-        int age , height , mass;
-        double massToHeightRatio;
+        int age , height , mass , riskFactor;
+        double massToHeightRatio, monthlyPremium;
         String name, smoker;
         boolean highRisk, lowRisk, mediumRisk;
         String instructions, output;
+        double lowRiskPremium = 50, mediumRiskPremium = 100, highRiskPremium = 150;
 
         //Take input
         Scanner input = new Scanner(System.in);
@@ -26,6 +29,8 @@ public class InsuranceRisk {
                 + " Answer all the questions. \n\n";
 
         System.out.println(instructions);
+
+
 
         System.out.println("Enter the name: ............. ");
         name = input.nextLine();
