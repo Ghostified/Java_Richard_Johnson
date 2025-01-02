@@ -8,6 +8,9 @@ public class NetPay {
         int hourlyWage;
         int numberOfHours;
         int grossPay  ;
+        double federalTax = 0;
+        double stateTax = 0;
+        double localTax = 0;
 
         System.out.println("Net Pay Calculator");
         Scanner scanner = new Scanner( System.in);
@@ -16,39 +19,31 @@ public class NetPay {
         System.out.println();
         System.out.println("Enter the number of hours worked");
         numberOfHours = scanner.nextInt();
-        System.out.println();
+        //System.out.println();
 
         grossPay = hourlyWage * numberOfHours;
-        int federalTax;
-        int stateTax;
-        int localTax;
+
 
         if (grossPay > 5000){
-            federalTax = (int) 0.20;
-            stateTax = (int)0.10;
-            localTax = (int) .05;
-            int taxes = (grossPay  * stateTax) + (grossPay * stateTax) + (grossPay * localTax);
-            int netPay = grossPay - taxes;
-            System.out.println("\n Your Gross Pay is : " + grossPay);
-            System.out.println("Your Taxes are : /n"
-                    +" Federal Tax: \n" +federalTax
-                    + "State Tax:  \n" + stateTax
-                    + "Local Tax: \n" + localTax);
+            federalTax =  0.20;
+            stateTax = 0.10;
+            localTax = .05;
+            System.out.print("Your Taxes are : Federal Tax: " +federalTax + "\n State Tax:  " + stateTax + "\n Local Tax: " + localTax);
+            double taxes = (grossPay  * stateTax) + (grossPay * stateTax) + (grossPay * localTax);
+            double netPay = grossPay - taxes;
+            System.out.print("\n Your Gross Pay is : " + grossPay);
             System.out.println("\n Your total taxes are : " + taxes);
-            System.out.println("Your Net income is " + netPay);
+            System.out.println("\n Your Net income is " + netPay);
         } else {
-            federalTax = (int) 0.10;
-            stateTax = (int)0.05;
-            localTax = (int) .025;
-            int taxes = (grossPay  * stateTax) + (grossPay * stateTax) + (grossPay * localTax);
-            int netPay = grossPay - taxes;
-            System.out.println("\n Your Gross Pay is : " + grossPay);
-            System.out.println("Your Taxes are : /n"
-                    +" Federal Tax: \n" +federalTax
-                    + "State Tax:  \n" + stateTax
-                    + "Local Tax: \n" + localTax);
+            federalTax =  0.10;
+            stateTax = 0.05;
+            localTax = .025;
+            System.out.print("Your Taxes are : Federal Tax: " +federalTax + "\n State Tax:  " + stateTax + "\n Local Tax: " + localTax);
+            double taxes = (grossPay  * stateTax) + (grossPay * stateTax) + (grossPay * localTax);
+            double netPay = grossPay - taxes;
+            System.out.print("\n Your Gross Pay is : " + grossPay);
             System.out.println("\n Your total taxes are : " + taxes);
-            System.out.println("Your Net income is " + netPay);
+            System.out.println("\n Your Net income is " + netPay);
         }
 
     }
