@@ -17,7 +17,7 @@ public class InsuranceRisk {
 
         int age , height , mass , riskFactor;
         double massToHeightRatio, monthlyPremium;
-        String name, smoker;
+        String name, smoker, exercise;
         boolean highRisk, lowRisk, mediumRisk;
         String instructions, output;
         double lowRiskPremium = 50, mediumRiskPremium = 100, highRiskPremium = 150;
@@ -36,6 +36,8 @@ public class InsuranceRisk {
         name = input.nextLine();
         System.out.println(" Is the individual a smoker? (Enter  y or n) ? .....");
         smoker = input.nextLine();
+        System.out.println(" Does the individual exercise? (Enter  y or n) ? .....");
+        exercise = input.nextLine();
         System.out.println(" Enter the age of the individual:         ");
         age = input.nextInt();
         System.out.println(" Enter the height of the individual:      ");
@@ -48,14 +50,15 @@ public class InsuranceRisk {
         massToHeightRatio = ((double) mass) / height;
 
         //use logical expressions:
-        highRisk = massToHeightRatio >= 3 && age >= 50 && smoker.equalsIgnoreCase("y");
-        lowRisk = massToHeightRatio < 3 && age < 50 && smoker.equalsIgnoreCase("n");
+        highRisk = massToHeightRatio >= 3 && age >= 50 && smoker.equalsIgnoreCase("y") && exercise.equalsIgnoreCase("n");
+        lowRisk = massToHeightRatio < 3 && age < 50 && smoker.equalsIgnoreCase("n") && exercise.equalsIgnoreCase("y");
         mediumRisk = !highRisk && !lowRisk;
 
         output = "The individual being analyzed is " + name             + "\n\n"
                 +  " Age:                            " + age             + " \n"
                 + "Mass:                        " + mass                   +"\n"
                 + "+Smoker:                     " + smoker                  +"\n"
+                + "+Smoker:                     " + exercise                  +"\n"
                 + "Weight to height ratio:      " + massToHeightRatio       +"\n"
                 + "Insurance risk assessment is as below: \n"
                 + "High Risk:                   " + highRisk + "\n"
