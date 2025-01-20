@@ -2,6 +2,8 @@ package ChapterFour;
 
 public class LoopsWithBreak {
     public static void main(String[] args) {
+
+        //loop with break
 //        for (int i = 1; i <= 10 ; i++){
 //
 //            if (i == 5)
@@ -14,6 +16,8 @@ public class LoopsWithBreak {
 //                }
 //
 //        }
+
+        //Loop with a continue statement;
         for (int i = 1; i <= 10 ; i++){
 
             if (i == 5)
