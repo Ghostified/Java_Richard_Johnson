@@ -26,7 +26,7 @@ public class MusicWorld {
                 orderSubTotal = 0,
                 orderTotal =0,
                 cdDiscount = 0;
-        final double TAX_RATE = 0.625,
+        final double TAX_RATE = .625,
                 DISCOUNT_FOR_FIVE = .10,
                 DISCOUNT_FOR_TEN = .15,
                 DISCOUNT_FOR_15 = .20;
@@ -34,7 +34,59 @@ public class MusicWorld {
         do {
             //input
             cdID = JOptionPane.showInputDialog(idMessage);
-            if
-        }
+            if (cdID.equalsIgnoreCase("X"))
+                break;
+            cdTitle = JOptionPane.showInputDialog(titleMessage);
+            cdPriceString = JOptionPane.showInputDialog(priceMessage);
+            cdQuantityString = JOptionPane.showInputDialog(quantityMessage);
+
+            //processing
+
+            taxRateString = 100 * TAX_RATE + " %";
+            cdPrice = Double.parseDouble(cdPriceString);
+            cdQuantity = Integer.parseInt(cdQuantityString);
+
+            //determine quantity of the discount
+            if (cdQuantity >= 15 ){
+                cdDiscount = DISCOUNT_FOR_15;
+            } else if (cdQuantity >= 10) {
+                cdDiscount = DISCOUNT_FOR_TEN;
+            }  else {
+                cdDiscount = DISCOUNT_FOR_FIVE;
+            }
+            discountRateString = 100 * cdDiscount + " %";
+
+            //round off
+            cdSubtotal = cdPrice * cdQuantity * (1 - cdDiscount);
+
+            //add subtotal for this cd to the order sub-total
+            orderSubTotal += cdSubtotal;
+
+            outputMessage = "Summary of the current item:\n +" +
+                    "CD ID: "    +  cdID + "\n"
+                    + "CD Title:  " + cdTitle + " \n"
+                    + " CD Unit Price: $  " + cdPrice + " \n"
+                    + " CD Quantity: " + cdQuantity + " \n"
+                    + " CD Discount: " + cdDiscount + " \n"
+                    + " CD Sub-Total:  " + cdSubtotal + " \n"
+                    + " CD Tax Rate:  " + taxRateString + " \n"
+                    + "Enter \n"
+                    + " R to reenter the date for this item: \n"
+                    + "X to end the order \n"
+                    + "Anything else to continue \n" ;
+
+            ////get choice
+            choiceString = JOptionPane.showInputDialog(outputMessage);
+            if (choiceString.equalsIgnoreCase("r"))
+            {
+                //itemCount = itemCount - 1; //reduce item count
+                orderSubTotal -= cdSubtotal ; //deduct cd-subtotal from order sub total
+            }
+        } while (!(choiceString.equalsIgnoreCase("x")));
+
+        //calculate total and formart to two decimal
+        orderTotal = orderSubTotal * (1  + TAX_RATE);
+        totalMessage = "The total of the " + itemCount + " -item order is $ : " + orderTotal;
+        JOptionPane.showMessageDialog(null, totalMessage);
     }
 }
