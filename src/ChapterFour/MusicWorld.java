@@ -79,10 +79,10 @@ public class MusicWorld {
             choiceString = JOptionPane.showInputDialog(outputMessage);
             if (choiceString.equalsIgnoreCase("r"))
             {
-                //itemCount = itemCount - 1; //reduce item count
+                itemCount = itemCount - 1; //reduce item count
                 orderSubTotal -= cdSubtotal ; //deduct cd-subtotal from order sub total
             }
-        } while (!(choiceString.equalsIgnoreCase("x")));
+        } while (!(choiceString.equalsIgnoreCase( "x")));
 
         //calculate total and formart to two decimal
         orderTotal = orderSubTotal * (1  + TAX_RATE);
