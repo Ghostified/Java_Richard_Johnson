@@ -9,9 +9,13 @@ public class EvenNumbersWhile {
 
         while( number <= x ){
               if ( number % 2 == 0){
-                  System.out.println(number);
+                  //System.out.println(number);
               }
             number++;
+        }
+        
+        for ( int i = 10; i % 2 == 0; i--){
+            System.out.println(i);
         }
     }
 }
