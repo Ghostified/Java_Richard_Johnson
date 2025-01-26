@@ -4,18 +4,24 @@ public class EvenNumbersWhile {
     public static void main(String[] args) {
 
 
-        int x = 10;
-        int number = 0;
+        int x = 0;
+        int number = 10;
 
-        while( number <= x ){
-              if ( number % 2 == 0){
-                  //System.out.println(number);
-              }
-            number++;
-        }
-        
-        for ( int i = 10; i % 2 == 0; i--){
-            System.out.println(i);
+//        while( number <= 10  && number % 2 == 0){
+////              if ( number % 2 == 0){
+////                  //System.out.println(number);
+////              }
+//            System.out.println(number);
+//            number++;
+//        }
+
+
+        for( x = 1; x <= 10 ; x++){
+
+            if (x % 2 == 0){
+                System.out.println(x);
+            }
+
         }
     }
 }
