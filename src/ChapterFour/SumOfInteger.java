@@ -10,7 +10,7 @@ public class SumOfInteger {
         //if number = 3
         // find number form 3 to 0
 
-        // sum all the number between 3 to 0
+        // sum all the number between  3 & 0
 
         String num = "Enter a number";
 
@@ -45,8 +45,6 @@ public class SumOfInteger {
 
         JOptionPane.showMessageDialog(null, output +  sum );
 
-
-
-
     }
+
 }
