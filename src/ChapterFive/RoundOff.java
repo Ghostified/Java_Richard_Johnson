@@ -16,5 +16,15 @@ public class RoundOff {
         System.out.println("Enter the desired precision");
         precision = input.nextDouble();
 
+        roundedValue = ((int) ((1/precision) * (value + precision/2))) / (1 / precision);
+
+        output = "\n The Value " + value + "\n"
+         + "rounded to the nearest " + precision + "\n"
+        + "is " + roundedValue + "\n\n" ;
+
+        System.out.println(output);
+
+
+
     }
 }
