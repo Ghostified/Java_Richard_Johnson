@@ -23,8 +23,5 @@ public class RoundOff {
         + "is " + roundedValue + "\n\n" ;
 
         System.out.println(output);
-
-
-
     }
 }
