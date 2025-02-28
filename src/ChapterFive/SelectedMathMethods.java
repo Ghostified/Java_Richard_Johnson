@@ -10,6 +10,12 @@ public class SelectedMathMethods {
        double  absoluteValue = Math.abs(aNumber);
         System.out.println(absoluteValue);
 
+        //ceil
+        double num2 = 1.01, ceilValue;
+        ceilValue = Math.ceil(num2);
+        System.out.println(ceilValue);
+
+
     }
 
 }
