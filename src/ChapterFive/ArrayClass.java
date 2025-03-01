@@ -13,7 +13,7 @@ public class ArrayClass {
         //printArray(numbers);
 
 
-        //sorting part of an array
+        //sorting part of an array using indices
         Arrays.sort(numbers, 3,5);
         printArray(numbers);
 
