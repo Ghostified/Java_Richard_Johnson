@@ -25,7 +25,7 @@ public class MethodsReference {
     }
 
     public static void printArrays (int [] array){
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             System.out.println(array [i] + " ");
         }
 
