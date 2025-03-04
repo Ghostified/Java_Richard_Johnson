@@ -41,7 +41,12 @@ public class SelectedMathMethods {
         long roundedValue;
         roundedValue = Math.round(num8);
         System.out.println(roundedValue);
-    }
 
+     //Returns a longh number closest to the argument
+     double num8 = 15.67;
+     long roundedValue;
+     roundedValue = Math.round(num8);
+     System.out.println(roundedValue);
+    }
 }
 
