@@ -42,6 +42,8 @@ public class SelectedMathMethods {
         roundedValue = Math.round(num8);
         System.out.println(roundedValue);
 
+        String piString = String.valueOf(Math.PI);
+        System.out.println(piString);
 
     }
 }
