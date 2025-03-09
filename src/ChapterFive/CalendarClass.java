@@ -1,5 +1,6 @@
 package ChapterFive;
 
+import java.text.DateFormat;
 import java.util.Calendar;
 
 public class CalendarClass {
@@ -26,7 +27,15 @@ public class CalendarClass {
         //set
         //the set method sets the calendar object to a specific date and time
         Calendar dueDate = Calendar.getInstance();
-        dueDate.set(2025, 10, 7);
+        dueDate.set(2025, 5, 1);
+        dueDate.add(Calendar.MONTH, 7);
+        int newDueYear = dueDate.get(Calendar.YEAR);
+        int newDueMonth = dueDate.get(Calendar.MONTH);
+        int newDueDate = dueDate.get(Calendar.DATE);
+        System.out.println("The new Due Date: " + newDueYear + " " + newDueMonth + " " + newDueDate);
+//        DateFormat longDueDate = DateFormat.getDateInstance(DateFormat.LONG);
+//        String myDueDateInLongFormart = longDueDate.format(dueDate);
+//        System.out.println(myDueDateInLongFormart);
 
 
 
