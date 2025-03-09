@@ -33,9 +33,10 @@ public class CalendarClass {
         int newDueMonth = dueDate.get(Calendar.MONTH);
         int newDueDate = dueDate.get(Calendar.DATE);
         System.out.println("The new Due Date: " + newDueYear + " " + newDueMonth + " " + newDueDate);
-//        DateFormat longDueDate = DateFormat.getDateInstance(DateFormat.LONG);
-//        String myDueDateInLongFormart = longDueDate.format(dueDate);
-//        System.out.println(myDueDateInLongFormart);
+        long dueTime = dueDate.getTimeInMillis();
+        DateFormat longDueDate = DateFormat.getDateInstance(DateFormat.LONG);
+        String myDueDateInLongFormart = longDueDate.format(dueDate);
+        System.out.println(myDueDateInLongFormart);
 
 
 

@@ -2,6 +2,7 @@ package ChapterFive;
 
 import java.sql.SQLOutput;
 import java.text.DateFormat;
+import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 public class GregorianCalendarClass {
@@ -14,5 +15,23 @@ public class GregorianCalendarClass {
         DateFormat longDate = DateFormat.getDateInstance(DateFormat.LONG);
         String birthdayStr = longDate.format(birthTime);
         System.out.println(birthdayStr);
+
+
+        //Example Two
+        Calendar taxDeadline = new GregorianCalendar(2026, 6,1);
+        taxDeadline.add(GregorianCalendar.YEAR, 10);
+        long taxDeadLineTime = taxDeadline.getTimeInMillis();
+        DateFormat longFormart = DateFormat.getDateInstance(DateFormat.LONG);
+        String taxDeadLineString = longFormart.format(taxDeadLineTime);
+        System.out.println(taxDeadLineString);
+
+        //Example 3
+        GregorianCalendar deadLine = new GregorianCalendar(2027, 5,6, 23, 59);
+        long deadLineTime = deadLine.getTimeInMillis();
+        DateFormat shortDeadLine = DateFormat.getTimeInstance(DateFormat.SHORT);
+        String deadLineString = shortDeadLine.format(deadLineTime);
+        System.out.println(deadLineString + " " + deadLine.get(GregorianCalendar.DATE));
+
+
     }
 }
