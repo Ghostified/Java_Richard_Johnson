@@ -3,6 +3,10 @@ package ChapterFive;
 public class MaximumInteger {
     public static void main(String[] args) {
         String result;
+        int x = 45;
+        int y = 60;
+        result = findMax(x,y); //pass by value
+        System.out.println(result);
 
         result = findMax(2, 3);
         System.out.println(result);
