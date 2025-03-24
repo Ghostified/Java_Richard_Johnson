@@ -6,13 +6,17 @@ public class ArrayClassInJava {
     public static void main(String[] args) {
         //static methods in the Array class
         //sort(array): sort  the array
-        int numbers [] = {2,4,5,6,7,8,9,75};
-        Arrays.sort(numbers);
-        printArray(numbers);
+        int numbers [] = {2,4,15,6,7,18,92,75};
+        //Arrays.sort(numbers);
+        //printArray(numbers);
 
         int character [] = {'a','c','d','b','B','A','C','D'};
         Arrays.sort(character);
-        printArray(character);
+        //printArray(character);
+
+        //sort(from index,toindex)
+        Arrays.sort(numbers,3,8);
+        printArray(numbers);
     }
     public static void printArray( int [] arrays){
         for (int array : arrays) {
