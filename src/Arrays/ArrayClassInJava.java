@@ -16,11 +16,29 @@ public class ArrayClassInJava {
 
         //sort(from index,toindex)
         Arrays.sort(numbers,3,8);
-        printArray(numbers);
+        //printArray(numbers);
+
+        //sorting an array of string
+        String stringArray [] = {"Hermione","Granger","Harry", "Potter"};
+        Arrays.sort(stringArray);
+        printAnyArrayType(stringArray);
+
+
     }
     public static void printArray( int [] arrays){
         for (int array : arrays) {
             System.out.println(array + " ");
+        }
+    }
+    //looping through an array using generic types
+    public  static <T> void printAnyArrayType( T [] Arrays ){
+
+        if (Arrays == null) {
+            System.out.println("The array is null and can not be iterated");
+            return;
+        }
+        for (int i = 0; i< Arrays.length; i++){
+            System.out.println(Arrays [i]);
         }
     }
 }
