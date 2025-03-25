@@ -37,8 +37,8 @@ public class ArrayClassInJava {
             System.out.println("The array is null and can not be iterated");
             return;
         }
-        for (int i = 0; i< Arrays.length; i++){
-            System.out.println(Arrays [i]);
+        for (T array : Arrays) {
+            System.out.println(array);
         }
     }
 }
