@@ -51,6 +51,9 @@ import java.util.Arrays;
             System.out.println("Element: " + myKey  + " not found, But can be inserted to: " + myIndex); //returns -10
         }
 
+        //Insert an element in an array
+
+
     }
 
     public static  <T> void printArray(T [] Arrays){
