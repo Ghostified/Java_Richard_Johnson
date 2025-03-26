@@ -27,6 +27,30 @@ import java.util.Arrays;
             System.out.println("Array element " + key + " has not been found");
         }
 
+        //return value of a binarySearch when an element is not found
+        // (insertionIndex + 1) --> RETURN VALUE WHEN AN ELEMENT IS NOT FOUND
+        System.out.println(" ");
+
+        //1: array declaration with type safety
+        Integer [] myNumbers = {9,6,2,8,4,7,3,5,1};
+
+        //2: sort and print sorted array
+        Arrays.sort(myNumbers);
+        System.out.println("The sorted array is : ");
+        printArray(myNumbers);
+
+
+        //3: perform binary search
+        int myKey = 10;
+        int myIndex = Arrays.binarySearch(myNumbers, myKey);
+
+        //4: print out the element
+        if (myIndex >= 0 ){
+            System.out.println("Element: " + myKey + " found at index: " + myIndex);
+        }else {
+            System.out.println("Element: " + myKey  + " not found, But can be inserted to: " + myIndex); //returns -10
+        }
+
     }
 
     public static  <T> void printArray(T [] Arrays){
