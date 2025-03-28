@@ -3,7 +3,7 @@ package Arrays;
 * Inserting an element into an array
 *
 * */
-public class InserrtElementIntoArray {
+public class InsertElementIntoArray {
     public static void main(String[] args) {
         //1: define original array and print
         Integer [] originalArray = {1,2,3,4,5};
