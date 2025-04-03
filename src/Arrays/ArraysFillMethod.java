@@ -10,4 +10,7 @@ public class ArraysFillMethod {
     public static <T>  void printArray(T Array [] ){
 
     }
+    public static <T>  void printArray(T Array [] ){
+
+    }
 }
