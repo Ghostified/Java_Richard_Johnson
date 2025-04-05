@@ -6,6 +6,9 @@ public class ArraysFillMethod {
 
         System.out.println("");
         System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
     }
 
     public static <T>  void printArray(T Array [] ){
