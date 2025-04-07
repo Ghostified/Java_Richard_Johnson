@@ -6,8 +6,10 @@ import java.util.Arrays;
 public class ArraysFillMethod {
     public static void main(String[] args) {
         Integer numbers [] = new Integer [8];
-        Arrays.fill(numbers,3);
+        Arrays.fill(numbers,4);
         printArray(numbers);
+
+        String names [] = new String[ 12];
     }
 
     public static <T>  void printArray(T Array [] ){
