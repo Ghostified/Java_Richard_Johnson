@@ -8,8 +8,7 @@ public class ArraysFillMethod {
         Integer numbers [] = new Integer [8];
         Arrays.fill(numbers,4);
         printArray(numbers);
-        Arrays.fill(numbers,4);
-        printArray(numbers);
+
 
     }
 
