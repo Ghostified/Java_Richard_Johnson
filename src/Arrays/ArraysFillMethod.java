@@ -5,7 +5,7 @@ import java.util.Arrays;
 //fill( array, value);
 public class ArraysFillMethod {
     public static void main(String[] args) {
-        Integer numbers [] = new Integer [8];
+        Integer numbers [] = new Integer [10];
         Arrays.fill(numbers)
 
 
