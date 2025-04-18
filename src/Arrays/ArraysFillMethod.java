@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class ArraysFillMethod {
     public static void main(String[] args) {
         Integer numbers [] = new Integer [10];
-        Arrays.fill(numbers);
+
         printArray(numbers);
 
 
