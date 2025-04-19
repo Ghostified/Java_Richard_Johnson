@@ -8,6 +8,9 @@ public class ArraysFillMethod {
         Integer numbers [] = new Integer [10];
 
         printArray(numbers);
+        printArray(numbers);
+
+
 
 
     }
