@@ -51,7 +51,11 @@ import java.util.Arrays;
             System.out.println("Element: " + myKey  + " not found, But can be inserted to: " + myIndex); //returns -10
         }
 
-        //Insert an element in an array
+        //Binary Search
+        String [] strings = {"a" , "b", "c"};
+        System.out.println(Arrays.binarySearch(strings, "a")); //0
+        System.out.println(Arrays.binarySearch(strings,"c")); //2
+        System.out.println(Arrays.binarySearch(strings,"A")); // -1
 
 
     }
