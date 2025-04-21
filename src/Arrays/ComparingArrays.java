@@ -1,5 +1,6 @@
 package Arrays;
 
+import java.awt.*;
 import java.util.Arrays;
 
 public class ComparingArrays {
@@ -32,6 +33,16 @@ public class ComparingArrays {
             System.out.println("The  objects are not equal");
         }
 
+        //comparing points
+        Point point1 = new Point(1,2);
+        Point point2 = new Point(1,2);
+        if(point2 == point1){
+            System.out.println("==  operator compares adresses ");
+        } else  if (point2.equals(point1)){
+            System.out.println("Object comparison");
+        }
+        System.out.println(point1 == point2); //false
+        System.out.println(point1.equals(point2)); //true
 
     }
 }
