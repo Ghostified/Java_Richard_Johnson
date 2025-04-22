@@ -11,6 +11,16 @@ public class ArrayClassMethods {
         Integer [] num2 = new Integer[8];
         Arrays.fill(num2, 4,8,9);
         printArray(num2);
+
+        String [] str1 = new String[ 10];
+        Arrays.fill(str1, "Hogwarts");
+        printArray(str1);
+        Arrays.fill(str1,5,8, "hello Branson");
+        printArray(str1);
+
+        //toString method returning a string representation of an array
+        System.out.println(Arrays.toString(str1));
+
     }
 
     public static  <T> void printArray( T [] array){
