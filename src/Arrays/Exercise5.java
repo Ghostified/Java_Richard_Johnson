@@ -8,10 +8,13 @@ public class Exercise5 {
     public static void main(String[] args) {
 
         int numbers [] = {2,5,3,4,9,8,7,6,-2};
+        int nums [] = {5,9,2,6,7,8,9,4};
 
         sortArray(numbers);
+        sortArrayMethodTwo(nums);
 
         System.out.println(Arrays.toString(numbers));
+        System.out.println(Arrays.toString(nums));
     }
 
     public static void sortArray(int initialArray[]) {
