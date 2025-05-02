@@ -63,29 +63,5 @@ public class Exercise5 {
     }
 
 
-    public static void sortArrayMethodTwoTwo(int[] array) {
-        int left = 0;
-        int right = array.length - 1;
-
-        while (left < right) {
-            // Move left pointer if current number is odd (correct place)
-            if (array[left] % 2 != 0) {
-                left++;
-            }
-            // Move right pointer if current number is even (correct place)
-            else if (array[right] % 2 == 0) {
-                right--;
-            }
-            // If left is even and right is odd, swap them
-            else {
-                int temp = array[left];
-                array[left] = array[right];
-                array[right] = temp;
-
-                left++;
-                right--;
-            }
-        }
-    }
 
 }
