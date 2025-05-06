@@ -60,15 +60,14 @@ public class Exercise5 {
                 right--;
             }
 
-                        else {
-                int temp = array[left];
-                array[left] = array[right];
-                array[right] = temp;
-
-                left++;
-                right--;
+//              // else {
+//                int temp = array[left];
+//                array[left] = array[right];
+//                array[right] = temp;
+//
+//                left++;
+//                right--;
             }
-
 
         }
     }
