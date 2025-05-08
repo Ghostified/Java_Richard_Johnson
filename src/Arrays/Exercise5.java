@@ -58,6 +58,9 @@ public class Exercise5 {
 
                 left++;
                 right--;
+
+//                left++;
+//                right--;
             }
 
 
