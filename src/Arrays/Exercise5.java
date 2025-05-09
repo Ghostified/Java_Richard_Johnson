@@ -51,6 +51,9 @@ public class Exercise5 {
                 right--;
             }
             // If left is even and right is odd, swap them
+            // If left is even and right is odd, swap them
+
+
             else {
                 int temp = array[left];
                 array[left] = array[right];
@@ -59,13 +62,10 @@ public class Exercise5 {
                 left++;
                 right--;
 
-//                left++;
-//                right--;
             }
 
 
             }
-
         }
     }
 
