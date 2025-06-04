@@ -15,7 +15,7 @@ public class RPCclient {
     }
 
     public  int add(int a, int b) throws IOException {
-        try(Socket socket = new Socket(host, port));
+        try(Socket socket = new Socket(host, port);
             ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
             ObjectInputStream in = new ObjectInputStream(socket.getInputStream())){
 
