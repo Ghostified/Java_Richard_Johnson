@@ -6,7 +6,7 @@ import java.util.Map;
 public class TwoSumSolution {
     public static void main(String[] args) {
         TwoSum solution = new TwoSum();
-        int [] nums = {2,7, 22,33,  59};
+        int [] nums = {2,7, 22,33,44,  59};
         int target = 9;
         int [] result = solution.twoSum(nums, target);
         System.out.println("Indices: " + result[0]);
